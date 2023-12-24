@@ -1,4 +1,3 @@
-from defines.settings import default_room
 import socket
 
 
@@ -7,7 +6,7 @@ class User:
     用户类，用于存储每个连接到本服务器的客户端的信息。
     """
 
-    def __init__(self, conn, address, permission, id_num, name):
+    def __init__(self, conn, address, permission, id_num, name, default_room):
         """
         初始化客户端
         """
